@@ -1,0 +1,56 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.rectangle {
+  border: 1px solid black;
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* This will center the element horizontally and vertically */
+  display: flex;
+  align-items: center;
+}
+
+.rectangle h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  text-align: center; /* This will center the text horizontally */
+  padding-left: 10px;
+}
+.inner-rectangle {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+}
+.inner-rectangle {
+  border-top: 2px solid black;
+  width: 500px;
+  height: 40px;
+  position: absolute;
+  bottom: 0; /* This will position the element at the bottom of the parent element */
+  display: flex;
+  align-items: center;
+}
+
+button {
+  margin: 7px; /* This will add 10 pixels of margin to the left and right sides of the button */
+  border-left: 1px solid black; 
+  border-top: 1px solid black;
+  border-radius: 5%;
+}
+
+input#image-button{
+    background: #ccc url('pixelme.png') no-repeat top left;
+    padding-left: 16px;
+    height: 16px;
+}
+header {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
