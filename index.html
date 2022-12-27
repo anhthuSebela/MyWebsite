@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  
 
 <head>
   <meta charset="utf-8">
@@ -8,13 +9,84 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<div class="rectangle" style="border: 1px solid black; width: 500px; height: 300px;">
-  <h1 id="header">This is my header text</h1>
+<div class="rectangle">
+  
+    <head>
+    <title>Title of the document</title>
+    <style>
+      h1 {
+        font-size: 30px;
+      }
+      .text-1 {
+        animation: text1;
+      }
+      .text-2 {
+        animation: text2;
+      }
+      .text-1,
+      .text-2 {
+        overflow: hidden;
+        white-space: nowrap;
+        display: inline-block;
+        position: relative;
+        animation-duration: 20s;
+        animation-timing-function: steps(25, end);
+        animation-iteration-count: infinite;
+      }
+      .text-1::after,
+      .text-2::after {
+        content: "|";
+        position: absolute;
+        right: 0;
+        animation: caret infinite;
+        animation-duration: 1s;
+        animation-timing-function: steps(1, end);
+      }
+      @keyframes text2 {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        60%,
+        90% {
+          width: 12.1em;
+        }
+      }
+      @keyframes text1 {
+        0%,
+        50%,
+        100% {
+          width: 0;
+        }
+        10%,
+        40% {
+          width: 10.6em;
+        }
+      }
+      @keyframes caret {
+        0%,
+        100% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span class="text-1">Hi, My name is Anh Thu!</span>
+      <span class="text-2">I am building AR for beauty.</span>
+    </h1>
+  </body>
+  </body>
   <div class="inner-rectangle">
-    <a href="http://www.example.com"><button>About Me</button></a>
-    <a href="http://www.example.com"><button>Sebela</button></a>
-    <a href="http://www.example.com"><button>Hobbies</button></a>
-    <a href="http://www.example.com"><button>Contact</button></a>
+    <a href="https://www.linkedin.com/in/anh-thu-le-52405b200/"><button>About Me</button></a>
+    <a href="https://www.sebela.co/old-home-2"><button>Sebela</button></a>
+    <a href="https://www.jospt.org/doi/10.2519/jospt.2016.0504"><button>Hobbies</button></a>
+    <a href="mailto:ale1@babson.edu"><button>Contact</button></a>
 
   </div>
 
