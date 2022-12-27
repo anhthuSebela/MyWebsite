@@ -15,8 +15,8 @@ body {
 .rectangle {
   background-color: #F6F6F6;
   border: 2px solid black;
-  width: 275px;
-  height: 200px;
+  width: 450px;
+  height: 300px;
   position: absolute;
   top: 33%;
   left: 50%;
@@ -35,7 +35,7 @@ body {
 .inner-rectangle {
   background-color: #D9D9D9;
   border-top: 2px solid black;
-  width: 275px;
+  width: 450px;
   height: 30px;
   position: absolute;
   bottom: 0; /* This will position the element at the bottom of the parent element */
